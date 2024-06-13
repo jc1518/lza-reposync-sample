@@ -17,5 +17,5 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: jc1518/lza-validator:v1.7.0
-          options: -v ${{ github.workspace }}:/lza-validator
+          options: -v ${{ github.workspace }}:/lza/config
           run: /lza/lza-validator.sh /lza/config/
